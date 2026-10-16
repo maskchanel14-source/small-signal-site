@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maskchanel14-source.github.io/small-signal-site/sitemap.xml
