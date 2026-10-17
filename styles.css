@@ -60,28 +60,30 @@ ol.points>li::before{content:counter(p,decimal-leading-zero);font-family:'Mono',
 footer{padding:40px 0 60px;color:var(--grey);font-size:13.5px}
 @media(max-width:900px){.hero-grid,.cta-band{grid-template-columns:1fr}section{padding:56px 0}
  ol.points>li{grid-template-columns:40px 1fr;gap:12px}}
-/* ---- MOBILE: diberesin 17 Okt jam 12:00 WIB (sebelumnya header didesain buat >=900px doang) ---- */
+/* ---- MOBILE: diberesin 17 Okt 12:25 WIB - layout blok, nol flex-wrap math ---- */
 @media(max-width:640px){
   .wrap{padding:0 18px}
   header.site{position:static;background:var(--paper);backdrop-filter:none}
-  header.site .row{flex-wrap:wrap;padding:12px 0 10px;gap:8px 12px}
-  .logo{font-size:16px;white-space:nowrap}
+  header.site .row{display:block;padding:11px 0 10px}
+  .logo{display:block;font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .logo span{display:none}
-  header.site nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;width:100%;
-    border-top:1px solid var(--rule);padding-top:9px}
-  nav a{margin-left:0;font-size:14px;color:#4a525e}
-  nav a.btn{margin-left:auto;padding:9px 13px;font-size:12.5px;white-space:nowrap}
-  .hero{padding:40px 0 34px}
+  header.site nav{display:flex;flex-wrap:wrap;align-items:center;gap:9px 15px;margin-top:10px;
+    border-top:1px solid var(--rule);padding-top:10px}
+  nav a{margin-left:0;font-size:13.5px;color:#4a525e}
+  nav a.btn{margin:10px 0 0;width:100%;text-align:center;padding:11px 12px;font-size:12.5px;white-space:nowrap}
+  .hero{padding:38px 0 32px}
+  .hero .kicker{font-size:11px;letter-spacing:.1em}
   section{padding:44px 0}
   .lead{font-size:17px}
-  h1{margin:10px 0 14px}
-  h2{font-size:23px}
-  .stats{gap:18px 28px;margin-top:20px}
-  .stats div{min-width:100px}
-  .stats b{font-size:31px}
+  h1{margin:10px 0 14px;font-size:clamp(29px,8.6vw,40px);line-height:1.08}
+  h2{font-size:22px}
+  .stats{gap:16px 26px;margin-top:22px}
+  .stats div{min-width:96px}
+  .stats b{font-size:29px}
   .card{padding:18px 16px}
-  .cta-band{padding:26px 20px}
+  .cta-band{padding:24px 18px}
   .btn{font-size:13.5px}
   .cta-band .btn,.hero .btn{width:100%;text-align:center}
   table.bands{display:block;overflow-x:auto;white-space:nowrap}
+  ol.points>li{padding:22px 0 18px}
 }
