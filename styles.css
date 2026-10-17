@@ -12,7 +12,7 @@ body{margin:0;background:var(--paper);color:#14181e;font:400 17px/1.6 'Grotesk',
 a{color:inherit}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 header.site{border-bottom:1px solid var(--rule);position:sticky;top:0;background:rgba(243,241,236,.92);backdrop-filter:blur(8px);z-index:9}
-header.site .row{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+header.site .row{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
 .logo{font-weight:700;letter-spacing:-.02em;font-size:18px;text-decoration:none}
 .logo span{color:#6f7a89;font-weight:500}
 nav a{margin-left:22px;font-size:14.5px;text-decoration:none;color:#3c434e}
@@ -64,7 +64,7 @@ footer{padding:40px 0 60px;color:var(--grey);font-size:13.5px}
 @media(max-width:640px){
   .wrap{padding:0 18px}
   header.site{position:static;background:var(--paper);backdrop-filter:none}
-  header.site .row{display:block;padding:11px 0 10px}
+  header.site .row{display:block;padding:11px 18px 10px}   /* 18px = napas kiri-kanan, dulu ke-nol-in sama shorthand ini */
   .logo{display:block;font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .logo span{display:none}
   header.site nav{display:flex;flex-wrap:wrap;align-items:center;gap:9px 15px;margin-top:10px;
